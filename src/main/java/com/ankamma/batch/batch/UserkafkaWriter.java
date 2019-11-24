@@ -11,9 +11,9 @@ import com.ankamma.batch.model.User;
 import com.ankamma.batch.producer.KafkaProducerService;
 
 @Component
-public class UserDbWriter implements ItemWriter<User> {
+public class UserkafkaWriter implements ItemWriter<User> {
 
-	private static final Logger logger = Logger.getLogger(UserDbWriter.class);
+	private static final Logger logger = Logger.getLogger(UserkafkaWriter.class);
 
 	@Autowired
 	private KafkaProducerService kafkaProducerService;
